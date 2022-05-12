@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        .col {
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+        }
+        /* .header{
+
+        } */
+        .box1 {
+            background-color: lightgray;
+            width: calc(100% - 200px);
+            margin-bottom: 20px;
+            margin-left: 100px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .box2 {
+            background-color: lightgray;
+            width: calc(100% - 200px);
+            float: left;
+            font-size: 24px;
+            /* height: 400px; */
+            margin-bottom: 20px;
+            margin-left: 100px;
+
+        }
+
+        .box3 {
+            background-color: lightgray;
+            width: calc((100% - 240px) / 3);
+            float: left;
+            font-size: 24px;
+            /* height: 400px; */
+            margin-right: 20px;
+            margin-left: 100px;
+        }
+        .box5 {
+            background-color: lightgray;
+            width: calc((100% - 240px) / 3);
+            float: left;
+            font-size: 24px;
+            /* height: 400px; */
+            margin-right: 20px;
+            margin-bottom: 20px;
+        }
+        .box6 {
+            background-color: lightgray;
+            width: calc((100% - 240px) / 3);
+            float: left;
+            font-size: 24px;
+            margin-right: 20px;
+            /* height: 400px; */
+        }
+
+        .box4 {
+            width: calc(100% - 200px);
+            background-color: lightgray;
+            font-size: 24px;
+            /* margin-bottom: 20px; */
+            /* margin: 20px 100px 20px 100px; */
+            margin-left: 100px;
+        }
+
+        .container::after {
+            content: "";
+            display: block;
+            clear: both;
+            margin-right: 100px;
+        }
+        a{
+            display: inline-block;
+            font-size: 16px;
+            /* margin-right: 20px; */
+            color: black;
+        }
+
+  
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="col header">Logo</div>
+        <div class="col box1">
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">Service</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="col box2">Feature</div>
+        <div class="col box3">Column one</div>
+        <div class="col box5">Column two</div>
+        <div class="col box6">Column three</div>
+        <div class="col box4">© Copyright 2022</div>
+    </div>
+</body>
+
+</html>
